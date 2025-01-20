@@ -1,6 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<url>http://localhost:8081/repository/belajar-spring-boot-rest-api/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<url>http://localhost:8081/repository/belajar-spring-boot-rest-api/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+<!--	<repositories>-->
+<!--		<repository>-->
+<!--			<id>nexus-releases</id>-->
+<!--			<url>http://localhost:8081/repository/belajar-spring-boot-rest-api/</url>-->
+<!--		</repository>-->
+<!--		<repository>-->
+<!--			<id>nexus-snapshots</id>-->
+<!--			<url>http://localhost:8081/repository/belajar-spring-boot-rest-api/</url>-->
+<!--		</repository>-->
+<!--	</repositories>-->
+
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -10,7 +32,7 @@
 	</parent>
 	<groupId>com.yogi_code</groupId>
 	<artifactId>belajar-spring-restful-api</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<name>Belajar Spring Restful API</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
