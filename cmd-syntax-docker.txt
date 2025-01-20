@@ -1,0 +1,9 @@
+// sonarqube
+docker run --name sonarqube-custom -p 9000:9000 sonarqube:community
+
+// sonar scanner
+docker run --rm --link sonarqube-custom ^
+    -e SONAR_HOST_URL="http://sonarqube-custom:9000"  ^
+    -e SONAR_TOKEN="TOKEN" ^
+    -v "C:\Users\yogianggara\Documents\belajar\belajar-spring-restful-api:/usr/src" ^
+    sonarsource/sonar-scanner-cli
